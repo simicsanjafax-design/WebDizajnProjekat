@@ -32,3 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// TOGGLE TAMNA / SVETLA TEMA
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("themeToggle");
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+
+      // menja tekst dugmeta
+      if (document.body.classList.contains("dark-theme")) {
+        toggleBtn.textContent = "☀️ Svetla tema";
+      } else {
+        toggleBtn.textContent = "🌙 Tamna tema";
+      }
+    });
+  }
+});

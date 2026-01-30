@@ -252,3 +252,103 @@ p{
   body{ padding-top: 72px; padding-bottom: 64px; }
   .faq-imgs{ grid-template-columns: 1fr; }
 }
+/* =========================
+   PRODUCT KARTICE (kutije)
+========================= */
+.product-card{
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+
+.product-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+}
+
+.product-img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: var(--gray);
+  border-bottom: 1px solid var(--border);
+}
+
+.product-price{
+  color: var(--brown);
+  font-weight: 700;
+}
+
+/* =====================
+   TAMNA TEMA – ISPRAVLJENO
+===================== */
+
+body.dark-theme{
+  background:
+    radial-gradient(1100px 700px at 10% 0%, rgba(40,40,40,0.9), transparent 55%),
+    radial-gradient(900px 600px at 90% 10%, rgba(20,20,20,0.85), transparent 55%),
+    #121212;
+
+  color: #f2f2f2; /* GLAVNI TEKST */
+}
+
+/* svi paragrafi, spanovi, mali tekst */
+body.dark-theme p,
+body.dark-theme span,
+body.dark-theme small,
+body.dark-theme .lead-soft,
+body.dark-theme .location-text,
+body.dark-theme .product-price{
+  color: rgba(240,240,240,0.85);
+}
+
+/* NASLOVI */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6{
+  color: #ffffff;
+}
+
+/* GLASS kartice */
+body.dark-theme .glass{
+  background: rgba(28,28,28,0.95);
+  border-color: rgba(255,255,255,0.15);
+}
+
+/* NAVBAR */
+body.dark-theme .navbar{
+  background: rgba(18,18,18,0.95) !important;
+}
+
+body.dark-theme .nav-link{
+  color: rgba(255,255,255,0.75) !important;
+}
+
+body.dark-theme .nav-link:hover,
+body.dark-theme .nav-link.active{
+  background: rgba(255,255,255,0.15);
+  color: #ffffff !important;
+}
+
+/* DUGMAD */
+body.dark-theme .btn-primary{
+  background: #7c6a57;
+  color: #ffffff;
+}
+
+body.dark-theme .btn-soft{
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* FOOTER */
+body.dark-theme .footer-fixed{
+  background: rgba(18,18,18,0.95);
+}
+
+body.dark-theme .footer-muted{
+  color: rgba(255,255,255,0.75);
+}

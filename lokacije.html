@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cvećara Latica | Galerija</title>
+  <title>Cvećara Latica | Lokacije</title>
 
-  <!-- Font -->
+  <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 
 <body>
 
-  <!-- NAVBAR (ISTI KAO NA OSTALIM STRANICAMA) -->
+  <!-- NAVBAR (ISTI KAO NA INDEXU) -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
@@ -33,14 +33,14 @@
 
        <div id="nav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto gap-lg-2">
-          <li class="nav-item"><a class="nav-link " href="index.html">Početna</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">O nama</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Usluge</a></li>
-          <li class="nav-item"><a class="nav-link active" href="gallery.html">Galerija</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galerija</a></li>
 
           <li class="nav-item"><a class="nav-link" href="svadbeni-buketi.html">Svadbeni buketi</a></li>
           <li class="nav-item"><a class="nav-link" href="ukrasne-kutije.html">Ukrasne kutije</a></li>
-          <li class="nav-item"><a class="nav-link" href="lokacije.html">Lokacije</a></li>
+          <li class="nav-item"><a class="nav-link active" href="lokacije.html">Lokacije</a></li>
 
           <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
           <li class="nav-item"><a class="nav-link" href="team.html">Tim</a></li>
@@ -51,62 +51,79 @@
     </div>
   </nav>
 
+  <!-- SADRŽAJ -->
   <main class="container">
 
     <!-- NASLOV -->
     <section class="glass p-4 p-lg-5 mb-4">
-      <h1 class="h3 fw-bold mb-2">Galerija buketa</h1>
+      <h1 class="h3 fw-bold mb-2">Naše lokacije</h1>
       <p class="lead-soft mb-0">
-        Izdvojeni primeri naših aranžmana. Klik na sliku otvara veći prikaz.
+        Posetite neku od naših cvećara u Novom Sadu. Uvek sveže cveće i prijatna atmosfera.
       </p>
     </section>
 
-    <!-- GALERIJA -->
+    <!-- LOKACIJE -->
     <section class="row g-3 mb-4">
-      <div class="col-12 col-sm-6 col-lg-4">
-        <a class="gallery-card" href="images/gal1.jpg" target="_blank">
-          <img src="images/gal1.jpg" alt="Buket pastelnih ruža">
-        </a>
+
+      <!-- Lokacija 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="glass location-card h-100">
+          <div class="p-3">
+            <h2 class="h5 fw-bold mb-1">Centar</h2>
+            <p class="location-text mb-1">Zmaj Jovina 12, Novi Sad</p>
+            <p class="location-text mb-3">Radno vreme: 08–20h</p>
+
+            <iframe
+              src="https://www.google.com/maps?q=Zmaj%20Jovina%2012%20Novi%20Sad&output=embed"
+              class="location-map"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-lg-4">
-        <a class="gallery-card" href="images/gal2.jpg" target="_blank">
-          <img src="images/gal2.jpg" alt="Šareni buket u vazi">
-        </a>
+      <!-- Lokacija 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="glass location-card h-100">
+          <div class="p-3">
+            <h2 class="h5 fw-bold mb-1">Liman</h2>
+            <p class="location-text mb-1">Bulevar cara Lazara 98</p>
+            <p class="location-text mb-3">Radno vreme: 09–21h</p>
+
+            <iframe
+              src="https://www.google.com/maps?q=Bulevar%20cara%20Lazara%2098%20Novi%20Sad&output=embed"
+              class="location-map"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-lg-4">
-        <a class="gallery-card" href="images/gal3.jpg" target="_blank">
-          <img src="images/gal3.jpg" alt="Beli buket ruža">
-        </a>
+      <!-- Lokacija 3 -->
+      <div class="col-12 col-lg-4">
+        <div class="glass location-card h-100">
+          <div class="p-3">
+            <h2 class="h5 fw-bold mb-1">Detelinara</h2>
+            <p class="location-text mb-1">Rumenačka 45, Novi Sad</p>
+            <p class="location-text mb-3">Radno vreme: 08–19h</p>
+
+            <iframe
+              src="https://www.google.com/maps?q=Rumenacka%2045%20Novi%20Sad&output=embed"
+              class="location-map"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-lg-4">
-        <a class="gallery-card" href="images/gal4.jpg" target="_blank">
-          <img src="images/gal4.jpg" alt="Voćno-cvetni aranžman">
-        </a>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4">
-        <a class="gallery-card" href="images/gal5.jpg" target="_blank">
-          <img src="images/gal5.jpg" alt="Zeleni buket">
-        </a>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4">
-        <a class="gallery-card" href="images/gal6.jpg" target="_blank">
-          <img src="images/gal6.jpg" alt="Crveni romantični buket">
-        </a>
-      </div>
     </section>
-
   </main>
 
-  <!-- FOOTER (ISTI KAO NA OSTALIM STRANICAMA) -->
+  <!-- FOOTER -->
   <footer class="footer-fixed">
     <div class="container py-2 text-center">
       <div class="small footer-muted">
-        Kontakt: <a class="footer-link" href="tel:+381645398776">+381645398776</a>
+        Kontakt: <a class="footer-link" href="tel:+381645398776">+381 64 539 8776</a>
       </div>
     </div>
   </footer>
