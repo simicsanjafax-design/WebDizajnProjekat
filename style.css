@@ -1,0 +1,254 @@
+/* =========================
+   GLOBALNE BOJE I FONT
+========================= */
+:root{
+  --blue:  #c5dded;
+  --brown: #7c6a57;
+  --gray:  #b8b9af;
+
+  --text: #2f2a25;
+  --card: rgba(255,255,255,0.9);
+  --border: rgba(124,106,87,0.25);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+
+  background:
+    radial-gradient(1100px 700px at 10% 0%, rgba(197,221,237,0.9), transparent 55%),
+    radial-gradient(900px 600px at 90% 10%, rgba(184,185,175,0.6), transparent 55%),
+    #f7f7f5;
+
+  padding-top: 76px;   /* navbar */
+  padding-bottom: 66px;/* footer */
+}
+
+/* =========================
+   KARTICE (GLASS EFEKAT)
+========================= */
+.glass{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar{
+  background: var(--brown) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.brand-logo{
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.nav-link{
+  color: rgba(255,255,255,0.85) !important;
+  padding: 10px 14px !important;
+  border-radius: 999px;
+}
+
+.nav-link:hover,
+.nav-link.active{
+  background: rgba(197,221,237,0.3);
+  color: #fff !important;
+}
+
+/* =========================
+   NASLOVI I TEKST
+========================= */
+h1, h2, h3{
+  color: var(--brown);
+}
+
+.lead-soft{
+  color: rgba(47,42,37,0.75);
+}
+
+p{
+  line-height: 1.7;
+}
+
+/* =========================
+   HERO SLIKA (INDEX)
+========================= */
+.hero-img{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+/* =========================
+   DUGMAD
+========================= */
+.btn-primary{
+  background: var(--brown);
+  border: none;
+}
+
+.btn-primary:hover{
+  background: #6a5a49;
+}
+
+.btn-soft{
+  background: rgba(197,221,237,0.7);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn-soft:hover{
+  background: rgba(197,221,237,0.9);
+}
+
+/* =========================
+   GALERIJA
+========================= */
+.gallery-card{
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: 0.2s ease;
+}
+
+.gallery-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+}
+
+.gallery-card img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: var(--gray);
+  padding: 14px;
+}
+
+/* =========================
+   TEAM
+========================= */
+.team-card{
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: var(--gray);
+  border-bottom: 1px solid var(--border);
+}
+
+.team-card:hover{
+  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   FAQ
+========================= */
+.faq-imgs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.faq-img{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: rgba(184,185,175,0.4);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.faq-accordion .accordion-item{
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-accordion .accordion-button{
+  background: rgba(197,221,237,0.5);
+  font-weight: 700;
+}
+
+.faq-accordion .accordion-body{
+  background: #fff;
+}
+
+/* =========================
+   LOKACIJE
+========================= */
+.location-card{
+  text-align: center;
+}
+
+.location-text{
+  color: rgba(47,42,37,0.75);
+  font-weight: 600;
+}
+
+.location-map{
+  width: 100%;
+  height: 220px;
+  border: 0;
+  border-radius: 16px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer-fixed{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--brown);
+  border-top: 1px solid rgba(255,255,255,0.25);
+  text-align: center;
+}
+
+.footer-muted{
+  color: rgba(255,255,255,0.85);
+}
+
+.footer-link{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px){
+  .hero-img{ height: 220px; }
+}
+
+@media (max-width: 576px){
+  body{ padding-top: 72px; padding-bottom: 64px; }
+  .faq-imgs{ grid-template-columns: 1fr; }
+}
